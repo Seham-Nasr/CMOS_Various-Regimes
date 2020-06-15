@@ -1,0 +1,5 @@
+V1=9; V2s=[0:0.1:40]; R=1e3; V12=[V1 V2s];
+Kp=1e-3; Vt=1; lambda=2e-3;
+[io,ID1,vs,Ro,Vomin]= ...
+FET4_current_mirror_Wilson(Kp,Vt,lambda,R,V12); ID1,vs,Ro
+plot(V2s,io, Vomin*[1 1],[0 io(end)],'g:'), legend('io','Vomin');

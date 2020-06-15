@@ -1,0 +1,4 @@
+I=3e-3;
+[io,ID1,v,Ro,Vomin]= ...
+FET3_current_mirror(Kp,Vt,lambda,I,V12);
+plot(V2s,io, Vomin*[1 1],[0 io(end)],'r:')
